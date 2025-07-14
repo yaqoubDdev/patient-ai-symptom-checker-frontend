@@ -1,0 +1,16 @@
+{
+  "allData": [
+    {
+      "id": "7c19",
+      "userName": "test",
+      "userAge": 10,
+      "userSymptomsDescription": "test test test"
+    },
+    {
+      "id": "0aae",
+      "userName": "yakub",
+      "userAge": 11,
+      "userSymptomsDescription": "lost appetite sore throat"
+    }
+  ]
+}
