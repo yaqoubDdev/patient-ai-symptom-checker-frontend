@@ -1,8 +1,19 @@
 import { useEffect, useState } from 'react';
 import services from './services/personService'
 import './App.css'
-import axios from 'axios';
 
+
+function Person(props){
+  const {userName, userAge, userSymptoms} = props
+
+  return(
+    <div className="person">
+      <p>Name: {userName}</p>
+      <p>Age: {userAge}</p>
+      <p>symptoms {userSymptoms}</p>
+    </div>
+  )
+}
 
 function App() {
   
@@ -74,6 +85,16 @@ function App() {
       <p>name: {userName}</p>
       <p>age: {userAge}</p>
       <p>symptoms: {symptomsDes}</p>
+
+      {
+        allData.map(({userName, userAge, userSymptomsDescription, id }) => 
+          (<Person key={id}
+            userName={userName}
+            userAge={userAge}
+            userSymptoms={userSymptomsDescription}
+          />)
+        )
+      }
     </>
   )
 }

@@ -14,3 +14,10 @@
   height: 100px ;
 }
 
+.person {
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
